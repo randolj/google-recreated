@@ -1,0 +1,138 @@
+body {
+    background-color: #202124; /* Set your desired background color here */
+    font-family: Roboto, sans-serif;
+  }
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-top: 203px; /* Adjust the margin-top value as needed */
+  }
+  
+  .logo {
+    max-width: 270px;
+    height: auto;
+  }
+
+  .search-container {
+    text-align: center;
+    position: relative;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Adjust text alignment as needed */
+  }
+  
+  .search-icon-container {
+    position: absolute;
+    top: 44.5px;
+    transform: translateY(-50%);
+    left: 35px; /* Adjust this value according to your design */
+  }
+  
+  .search-bar {
+    border-radius: 40px;
+    margin: 20px;
+    padding-left: 40px; /* Adjust this value to make room for the icon */
+    width: 560px;; /* Adjust the width to accommodate the icon and spacing */
+    height: 45px;
+    background-color: #202124;
+    border: 1px solid #5f6367;
+    color: #e8eaed;
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 100%;
+  }
+  
+  .search-btn {
+    text-align: center; /* Center the buttons */
+  }
+  
+  .search-btn button {
+    margin-top: 10px;
+    margin-right: 8px;
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #d2d4d7; /* Adjust the color as needed */
+    background-color: #303134; /* Adjust the background color as needed */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    cursor: pointer;
+  }
+
+  .fa-search:before {
+    content: "\f002"; /* Unicode for magnifying glass icon */
+    font-family: "FontAwesome";
+    color: #9ba0a5; /* Set the icon color to match your design */
+  }
+  
+
+  .top-button {
+    text-decoration: none;
+    color: lightgrey; /* Set the default color for the text */
+    position: relative;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  .top-button:hover::after {
+    content: '';
+    display: block;
+    width: 99%;
+    height: 1px; /* Adjust the thickness of the line */
+    background-color: lightgrey; /* Set the color of the line */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .top-left {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .top-right {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .right {
+    color: white;
+  }
+
+  .top-right img {
+    width: 32px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100%; /* Make the image rounded */
+  }
+
+  footer {
+    background-color: #171817; /* You can choose a different color for the footer */
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container::after {
+  content: "";
+  flex: 1;
+}
