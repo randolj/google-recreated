@@ -36,14 +36,14 @@ body {
     position: absolute;
     top: 44.5px;
     transform: translateY(-50%);
-    left: 35px; /* Adjust this value according to your design */
+    left: 16px; /* Adjust this value according to your design */
   }
   
   .search-bar {
     border-radius: 40px;
     margin: 20px;
     padding-left: 40px; /* Adjust this value to make room for the icon */
-    width: 560px;; /* Adjust the width to accommodate the icon and spacing */
+    width: 535px;; /* Adjust the width to accommodate the icon and spacing */
     height: 45px;
     background-color: #202124;
     border: 1px solid #5f6367;
@@ -51,6 +51,7 @@ body {
     font-family: Roboto;
     font-weight: 200;
     font-size: 100%;
+    margin-left: 2px;
   }
   
   .search-btn {
@@ -60,14 +61,18 @@ body {
   .search-btn button {
     margin-top: 10px;
     margin-right: 8px;
-    font-size: 14px; /* Adjust the font size as needed */
-    color: #d2d4d7; /* Adjust the color as needed */
-    background-color: #303134; /* Adjust the background color as needed */
-    border: none;
+    font-size: 14px;
+    color: #d2d4d7;
+    background-color: #303134;
+    border: 1px solid #303134; /* Set initial border color to match background */
     border-radius: 5px;
-    padding: 10px 20px; /* Adjust the padding as needed */
+    padding: 10px 20px;
     cursor: pointer;
-  }
+}
+
+.search-btn button:hover {
+    border-color: #9ba0a5; /* Change border color on hover */
+}
 
   .fa-search:before {
     content: "\f002"; /* Unicode for magnifying glass icon */
@@ -107,6 +112,7 @@ body {
     display: flex;
     align-items: center;
   }
+
   .right {
     color: white;
   }
